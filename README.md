@@ -1,65 +1,15 @@
-# perplexity-unofficial-extension README
+# Unofficial-Perplexity-Api-Vscode-Extension
+Unofficial Perplexity Api Vscode Extension (written mostly with help from perplexity)
 
-This is the README for your extension "perplexity-unofficial-extension". After writing up a brief description, we recommend including the following sections.
+install nodejs for windows here: https://nodejs.org/en/download
+install node fetch: npm install node-fetch@2.6.6
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. clone the project and open in vscode
+2. open extension.js and go to line 56 and replace "_Your-API-Token-Here_" with your api key from Perplexity (As of initial time of writing)
+3. Press F5 to launch a Dev environment in Vscode
+4. Click the robot icon to open the extension on the activity bar
+5. A small rocket icon will appear on the status bar at the bottom click it
+6. A input box will appear enter your prompt and press enter
+7. Your prompt will appear on the extension window and the AI reponse underneath the your prompt
+8. To view the full response hover you mouse over the text to see it in full or click on the response and right click and selct copy to copy the response
+0 comments on commit 296b300 

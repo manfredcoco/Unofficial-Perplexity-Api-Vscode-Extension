@@ -1,0 +1,72 @@
+{
+  "name": "Unofficial-Perplexity-Api-Vscode-Extension",
+  "displayName": "Unofficial Perplexity Api Vscode Extension",
+  "description": "Unofficial Perplexity Api Vscode Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.showInputBox"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "my-view-container",
+          "title": "My View",
+          "icon": "resources/myicon.svg"
+        }
+      ]
+    },
+    "views": {
+      "my-view-container": [
+        {
+          "id": "myView",
+          "name": "AI Prompt"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.showInputBox",
+        "title": "Show Input Box"
+      },
+      {
+        "command": "extension.copyTreeItem",
+        "title": "Copy"
+      }
+    ],
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "extension.copyTreeItem",
+          "group": "0_copy"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.28.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.6"
+  }
+}
